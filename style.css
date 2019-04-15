@@ -1,0 +1,97 @@
+article{
+    grid-area: article;
+    background-color: blue;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:'header'
+                        'section'
+                        'div'
+                        'article'
+                        'footer';
+    grid-template-rows: 55vh 30vh 30vh 35vh 20vh;
+}
+
+body #secondsection{
+    grid-area: div;
+    background-color: black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lime;
+}
+
+header{
+    grid-area: header;
+    background-color: orange;
+    background-image: url(image/banner.png);
+    border-top: 15px solid #4fac24;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: space-around;
+}
+
+header div:first-child{
+    flex-direction: column;
+    color: white;
+}
+
+header div:first-child h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: inherit;
+    font-size: 8vh;
+}
+
+header div:first-child h1 span{
+    color: #4fac24;
+}
+
+header div:first-child p{
+    font-size: 2.5vh;
+    width: 480px;
+    font-style: italic;
+}
+
+#icontop{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 0;
+}
+
+#icontop img{
+    height: 35px;
+}
+
+#icontop div{
+    display: flex;
+    background-color: black;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icontop div:hover{
+    background-color: #4fac24;
+}
+
+header #hand{
+    display: flex;
+    align-items: flex-end;
+}
+
+header div:last-child img{
+    height: 48vh;
+}
+
+section{
+    grid-area: section;
+    background-color: purple;
+}
